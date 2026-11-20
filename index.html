@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uganda National IT Skills Assessment 2026</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+  <!-- (a) HEADER: coat of arms + heading -->
+  <header class="site-header">
+    <!-- Inline CSS is used ONLY here, as the task requires -->
+    <img src="uganda-coat-of-arms.png" alt="Uganda Coat of Arms" style="max-width:80px;">
+    <h1>National Information Technology Authority — Uganda</h1>
+  </header>
+
+  <!-- (a) BANNER: full-width image with overlay title -->
+  <section class="banner">
+    <img src="survey-banner.jpg" alt="Survey banner">
+    <h2 class="banner-title">Uganda National IT Skills Assessment 2026</h2>
+  </section>
+
+  <!-- (a) PROGRESS INDICATOR: 3 steps, Step 1 is current -->
+  <ol class="progress">
+    <li class="step current">Step 1 — Respondent Details</li>
+    <li class="step">Step 2 — Skills Assessment</li>
+    <li class="step">Step 3 — Submit</li>
+  </ol>
+
+  <!-- (b) RESPONDENT DETAILS -->
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Respondent Details</legend>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required minlength="4">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone (e.g. +256700123456)</label>
+          <input type="tel" id="phone" name="phone" pattern="\+256[0-9]{9}" placeholder="+256700123456">
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-options">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select id="region" name="region">
+            <option value="Central">Central</option>
+            <option value="Eastern">Eastern</option>
+            <option value="Northern">Northern</option>
+            <option value="Western">Western</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Respondent Category</label>
+          <div class="radio-options">
+            <label><input type="radio" name="category" value="ICT Professional"> ICT Professional</label>
+            <label><input type="radio" name="category" value="Government Officer"> Government Officer</label>
+            <label><input type="radio" name="category" value="Student"> Student</label>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+
+</body>
+</html>
